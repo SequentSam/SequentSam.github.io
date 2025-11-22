@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog · Sam Alexander</title>
+  <meta name="description" content="A starter Eleventy site ready for customization." />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <a class="brand" href="/">Sam Alexander</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <section class="section">
+  <div class="section-heading">
+    <h1>Blog</h1>
+    <p>Stories and lessons learned while building Eleventy projects.</p>
+  </div>
+
+  
+    
+    
+      <div class="tag-filter" data-tag-filter data-grid="#blog-grid">
+        <span class="tag-filter__label">Filter by tag:</span>
+        <div class="tag-filter__buttons">
+          <button type="button" data-tag="all" aria-pressed="true">All</button>
+          
+            <button type="button" data-tag="accessibility">accessibility</button>
+          
+            <button type="button" data-tag="content">content</button>
+          
+            <button type="button" data-tag="design">design</button>
+          
+            <button type="button" data-tag="eleventy">eleventy</button>
+          
+            <button type="button" data-tag="experiments">experiments</button>
+          
+            <button type="button" data-tag="jamstack">jamstack</button>
+          
+            <button type="button" data-tag="marketing">marketing</button>
+          
+            <button type="button" data-tag="performance">performance</button>
+          
+            <button type="button" data-tag="process">process</button>
+          
+            <button type="button" data-tag="serverless">serverless</button>
+          
+            <button type="button" data-tag="systems">systems</button>
+          
+            <button type="button" data-tag="tooling">tooling</button>
+          
+            <button type="button" data-tag="workflow">workflow</button>
+          
+        </div>
+      </div>
+    
+
+    <div id="blog-grid" class="blog-grid blog-grid--single">
+      
+        <article class="blog-card" data-tags="design,systems">
+          <a class="blog-card__image" href="/blog/component-library-audit/">
+            
+              <img src="/assets/images/blog/design-system.svg" alt="Component Library Audit Checklist cover image" loading="lazy" />
+            
+          </a>
+          <div class="blog-card__body">
+            <p class="post-date">November 30, 2023</p>
+            <h2><a href="/blog/component-library-audit/">Component Library Audit Checklist</a></h2>
+            <p>How to review a component library for accessibility, performance, and design debt.</p>
+          </div>
+        </article>
+      
+    </div>
+  
+
+  <nav class="pagination" aria-label="Blog pagination">
+    
+      <a class="pagination__link" href="/blog/">← Newer posts</a>
+    
+    
+  </nav>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>&copy; 2025 Sam Alexander · Built with <a href="https://www.11ty.dev/">Eleventy</a>.</p>
+    </div>
+  </footer>
+  <script src="/assets/blog-filter.js" defer></script>
+</body>
+</html>
