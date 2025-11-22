@@ -4,7 +4,8 @@
   "description": "Sample Eleventy website",
   "scripts": {
     "build": "eleventy",
-    "start": "eleventy --serve --watch"
+    "start": "eleventy --serve --watch",
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/SequentSam.github.io/"
   },
   "keywords": [],
   "author": "",
