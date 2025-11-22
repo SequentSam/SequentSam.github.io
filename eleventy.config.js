@@ -1,5 +1,6 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
+  eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addWatchTarget("src/assets");
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
