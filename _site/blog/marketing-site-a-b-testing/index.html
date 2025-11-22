@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Running A/B Tests on a Static Marketing Site · Sam Alexander</title>
+  <meta name="description" content="A starter Eleventy site ready for customization." />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <a class="brand" href="/">Sam Alexander</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <article class="section blog-post">
+  <header class="blog-post__header">
+    <p class="post-date">January 24, 2024</p>
+    <h1>Running A/B Tests on a Static Marketing Site</h1>
+    
+      <p class="post-excerpt">Lightweight tooling to test hero copy and CTAs without slowing down your Eleventy build.</p>
+    
+  </header>
+
+  
+    <figure class="post-hero">
+      <img src="/assets/images/blog/performance-playbook.svg" alt="Running A/B Tests on a Static Marketing Site cover image" loading="lazy" />
+    </figure>
+  
+
+  <div class="blog-post__content">
+    <p>Static sites can still run experiments. I walk through how to inject a small experiment framework that rotates hero copy variants, reports conversions, and gracefully falls back when scripts fail. The key is to avoid blocking rendering; everything waits until the first paint so content remains crawlable and fast.</p>
+
+  </div>
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>&copy; 2025 Sam Alexander · Built with <a href="https://www.11ty.dev/">Eleventy</a>.</p>
+    </div>
+  </footer>
+  <script src="/assets/blog-filter.js" defer></script>
+</body>
+</html>

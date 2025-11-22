@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Designing a Resilient Design System · Sam Alexander</title>
+  <meta name="description" content="A starter Eleventy site ready for customization." />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <a class="brand" href="/">Sam Alexander</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <article class="section blog-post">
+  <header class="blog-post__header">
+    <p class="post-date">February 14, 2024</p>
+    <h1>Designing a Resilient Design System</h1>
+    
+      <p class="post-excerpt">Lessons learned from building a flexible design system that can evolve with a fast-moving product team.</p>
+    
+  </header>
+
+  
+    <figure class="post-hero">
+      <img src="/assets/images/blog/design-system.svg" alt="Designing a Resilient Design System cover image" loading="lazy" />
+    </figure>
+  
+
+  <div class="blog-post__content">
+    <p>Your design system should do far more than provide a stack of reusable components. It needs to capture how and why a team assembles interfaces, how tokens map to code, and how decisions are documented. In this post I break down the workshop framework I use with clients to align designers and developers on the same primitives.</p>
+<p>We start by inventorying real product UI, then extract the small set of tokens that are doing the heavy lifting. From there, each pattern is validated with accessibility and performance constraints before it becomes a component. This process takes more time up front, but it produces systems that can survive the next rebrand without major rewrites.</p>
+
+  </div>
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>&copy; 2025 Sam Alexander · Built with <a href="https://www.11ty.dev/">Eleventy</a>.</p>
+    </div>
+  </footer>
+  <script src="/assets/blog-filter.js" defer></script>
+</body>
+</html>

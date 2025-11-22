@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+---
+<article class="section blog-post">
+  <header class="blog-post__header">
+    <p class="post-date">{{ page.date | readableDate }}</p>
+    <h1>{{ title }}</h1>
+    {% if excerpt %}
+      <p class="post-excerpt">{{ excerpt }}</p>
+    {% endif %}
+  </header>
+
+  {% if image %}
+    <figure class="post-hero">
+      <img src="{{ image }}" alt="{{ title }} cover image" loading="lazy" />
+    </figure>
+  {% endif %}
+
+  <div class="blog-post__content">
+    {{ content | safe }}
+  </div>
+</article>
