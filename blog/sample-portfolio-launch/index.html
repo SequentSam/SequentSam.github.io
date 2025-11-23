@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ship a Portfolio in a Weekend · Sam Alexander</title>
+  <meta name="description" content="It started with Mosaic, SPARCStations, and screaming modems." />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <a class="brand" href="/">Sam Alexander</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <article class="section blog-post">
+  <header class="blog-post__header">
+    <p class="post-date">February 14, 2024</p>
+    <h1>Ship a Portfolio in a Weekend</h1>
+    
+      <p class="post-excerpt">A lightweight playbook for standing up an Eleventy portfolio, from content outline to a polished deploy on GitHub Pages.</p>
+    
+  </header>
+
+  
+    <figure class="post-hero">
+      <img src="/assets/images/blog/design-system.svg" alt="Ship a Portfolio in a Weekend cover image" loading="lazy" />
+    </figure>
+  
+
+  <div class="blog-post__content">
+    <p>If you keep putting off your personal site because it feels like a big lift, this weekend-sized plan will get you live. The goal is momentum over perfection: pick a simple stack, write only what matters, and ship on Sunday night.</p>
+<h2>Saturday: structure and content</h2>
+<ul>
+<li><strong>Outline the pages.</strong> Home, About, Contact, and a Blog landing page are enough. Give yourself one featured project and one story or article.</li>
+<li><strong>Write fast.</strong> Draft bullets before prose. Aim for ~150 words per page and a 3–4 sentence hero story that says who you are, what you do, and who you help.</li>
+<li><strong>Collect assets.</strong> One portrait, one project screenshot, and a simple favicon are enough. Keep filenames short and lowercase.</li>
+</ul>
+<h2>Saturday evening: assemble in Eleventy</h2>
+<ul>
+<li><strong>Clone a starter</strong> or scaffold with <code>npx @11ty/eleventy --init</code>. Keep the folder structure clean: <code>src/</code>, <code>_includes/</code>, <code>_data/</code>.</li>
+<li><strong>Wire your content</strong> into templates. Use a single layout for pages and a blog layout for posts to keep styling consistent.</li>
+<li><strong>Add basic SEO.</strong> Set <code>&lt;title&gt;</code>, meta description, and social share image in a shared head partial.</li>
+</ul>
+<h2>Sunday: polish and deploy</h2>
+<ul>
+<li><strong>Apply a palette and type pair</strong> (one sans, one display). Keep buttons and links on-brand.</li>
+<li><strong>Test the responsive layout.</strong> Check nav, hero, cards, and forms at 360px, 768px, and desktop widths.</li>
+<li><strong>Deploy to GitHub Pages.</strong> Push to <code>main</code>, let your workflow publish <code>_site</code>, and verify your CNAME points to your custom domain.</li>
+</ul>
+<h2>After launch: iterate in small steps</h2>
+<p>Ship small improvements weekly: add a case study, a new article, or a signup form. Once the foundation is live, it’s easier to keep showing up. The important part is that your work is visible and current.***</p>
+
+  </div>
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>&copy; 2025 Sam Alexander · Built with <a href="https://www.11ty.dev/">Eleventy</a>.</p>
+    </div>
+  </footer>
+  <script src="/assets/blog-filter.js" defer></script>
+</body>
+</html>

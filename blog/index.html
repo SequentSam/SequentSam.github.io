@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Blog · Sam Alexander</title>
-  <meta name="description" content="A starter Eleventy site ready for customization." />
+  <meta name="description" content="It started with Mosaic, SPARCStations, and screaming modems." />
   <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body>
@@ -15,6 +15,7 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/about/">About</a></li>
+          <li><a href="/resume/">Resume</a></li>
           <li><a href="/contact/">Contact</a></li>
         </ul>
       </nav>
@@ -36,165 +37,28 @@
         <div class="tag-filter__buttons">
           <button type="button" data-tag="all" aria-pressed="true">All</button>
           
-            <button type="button" data-tag="accessibility">accessibility</button>
-          
-            <button type="button" data-tag="content">content</button>
-          
-            <button type="button" data-tag="design">design</button>
+            <button type="button" data-tag="collaboration">collaboration</button>
           
             <button type="button" data-tag="eleventy">eleventy</button>
           
-            <button type="button" data-tag="experiments">experiments</button>
-          
-            <button type="button" data-tag="jamstack">jamstack</button>
-          
-            <button type="button" data-tag="marketing">marketing</button>
-          
-            <button type="button" data-tag="performance">performance</button>
-          
-            <button type="button" data-tag="process">process</button>
-          
-            <button type="button" data-tag="serverless">serverless</button>
-          
-            <button type="button" data-tag="systems">systems</button>
-          
-            <button type="button" data-tag="tooling">tooling</button>
-          
-            <button type="button" data-tag="workflow">workflow</button>
+            <button type="button" data-tag="github-pages">github-pages</button>
           
         </div>
       </div>
     
 
-    <div id="blog-grid" class="blog-grid">
+    <div id="blog-grid" class="blog-grid blog-grid--single">
       
-        <article class="blog-card" data-tags="content,workflow">
-          <a class="blog-card__image" href="/blog/content-workflow-for-small-teams/">
+        <article class="blog-card" data-tags="eleventy,github-pages,collaboration">
+          <a class="blog-card__image" href="/blog/building-with-codex/">
             
-              <img src="/assets/images/blog/content-workflow.svg" alt="Content Workflow for Small Teams cover image" loading="lazy" />
+              <img src="/assets/images/blog/IMG_3668.jpg" alt="Building This Site Together with Codex cover image" loading="lazy" />
             
           </a>
           <div class="blog-card__body">
-            <p class="post-date">May 28, 2024</p>
-            <h2><a href="/blog/content-workflow-for-small-teams/">Content Workflow for Small Teams</a></h2>
-            <p>A lightweight editorial workflow that keeps a two-person content team publishing consistently.</p>
-          </div>
-        </article>
-      
-        <article class="blog-card" data-tags="marketing,process">
-          <a class="blog-card__image" href="/blog/product-launch-checklist/">
-            
-              <img src="/assets/images/blog/accessibility-first.svg" alt="Product Launch Checklist for Marketing Sites cover image" loading="lazy" />
-            
-          </a>
-          <div class="blog-card__body">
-            <p class="post-date">May 5, 2024</p>
-            <h2><a href="/blog/product-launch-checklist/">Product Launch Checklist for Marketing Sites</a></h2>
-            <p>A deploy-ready list that keeps your Eleventy marketing site polished for launch day.</p>
-          </div>
-        </article>
-      
-        <article class="blog-card" data-tags="performance,eleventy">
-          <a class="blog-card__image" href="/blog/performance-playbook-2024/">
-            
-              <img src="/assets/images/blog/performance-playbook.svg" alt="2024 Front-End Performance Playbook cover image" loading="lazy" />
-            
-          </a>
-          <div class="blog-card__body">
-            <p class="post-date">April 19, 2024</p>
-            <h2><a href="/blog/performance-playbook-2024/">2024 Front-End Performance Playbook</a></h2>
-            <p>Core Web Vitals are evolving again—here is how I keep Eleventy sites fast with modern tooling.</p>
-          </div>
-        </article>
-      
-        <article class="blog-card" data-tags="jamstack,serverless">
-          <a class="blog-card__image" href="/blog/serverless-contact-forms/">
-            
-              <img src="/assets/images/blog/performance-playbook.svg" alt="Serverless Contact Forms for Static Sites cover image" loading="lazy" />
-            
-          </a>
-          <div class="blog-card__body">
-            <p class="post-date">March 27, 2024</p>
-            <h2><a href="/blog/serverless-contact-forms/">Serverless Contact Forms for Static Sites</a></h2>
-            <p>Collect leads securely without spinning up a backend server.</p>
-          </div>
-        </article>
-      
-        <article class="blog-card" data-tags="accessibility,process">
-          <a class="blog-card__image" href="/blog/accessibility-audit-checklist/">
-            
-              <img src="/assets/images/blog/accessibility-first.svg" alt="A Practical Accessibility Audit Checklist cover image" loading="lazy" />
-            
-          </a>
-          <div class="blog-card__body">
-            <p class="post-date">March 8, 2024</p>
-            <h2><a href="/blog/accessibility-audit-checklist/">A Practical Accessibility Audit Checklist</a></h2>
-            <p>Ship inclusive experiences faster with a repeatable audit checklist that pairs design reviews with automated tooling.</p>
-          </div>
-        </article>
-      
-        <article class="blog-card" data-tags="design,systems">
-          <a class="blog-card__image" href="/blog/designing-a-resilient-design-system/">
-            
-              <img src="/assets/images/blog/design-system.svg" alt="Designing a Resilient Design System cover image" loading="lazy" />
-            
-          </a>
-          <div class="blog-card__body">
-            <p class="post-date">February 15, 2024</p>
-            <h2><a href="/blog/designing-a-resilient-design-system/">Designing a Resilient Design System</a></h2>
-            <p>Lessons learned from building a flexible design system that can evolve with a fast-moving product team.</p>
-          </div>
-        </article>
-      
-        <article class="blog-card" data-tags="eleventy,tooling">
-          <a class="blog-card__image" href="/blog/eleventy-plugin-roundup/">
-            
-              <img src="/assets/images/blog/content-workflow.svg" alt="Eleventy Plugin Roundup cover image" loading="lazy" />
-            
-          </a>
-          <div class="blog-card__body">
-            <p class="post-date">February 2, 2024</p>
-            <h2><a href="/blog/eleventy-plugin-roundup/">Eleventy Plugin Roundup</a></h2>
-            <p>My go-to plugins for image optimization, RSS feeds, and improved Markdown authoring.</p>
-          </div>
-        </article>
-      
-        <article class="blog-card" data-tags="marketing,experiments">
-          <a class="blog-card__image" href="/blog/marketing-site-a-b-testing/">
-            
-              <img src="/assets/images/blog/performance-playbook.svg" alt="Running A/B Tests on a Static Marketing Site cover image" loading="lazy" />
-            
-          </a>
-          <div class="blog-card__body">
-            <p class="post-date">January 25, 2024</p>
-            <h2><a href="/blog/marketing-site-a-b-testing/">Running A/B Tests on a Static Marketing Site</a></h2>
-            <p>Lightweight tooling to test hero copy and CTAs without slowing down your Eleventy build.</p>
-          </div>
-        </article>
-      
-        <article class="blog-card" data-tags="design,systems">
-          <a class="blog-card__image" href="/blog/building-design-tokens-at-scale/">
-            
-              <img src="/assets/images/blog/design-system.svg" alt="Building Design Tokens at Scale cover image" loading="lazy" />
-            
-          </a>
-          <div class="blog-card__body">
-            <p class="post-date">January 10, 2024</p>
-            <h2><a href="/blog/building-design-tokens-at-scale/">Building Design Tokens at Scale</a></h2>
-            <p>A phased approach to rolling out design tokens across multiple products without breaking existing UI.</p>
-          </div>
-        </article>
-      
-        <article class="blog-card" data-tags="content,workflow">
-          <a class="blog-card__image" href="/blog/headless-cms-workflow/">
-            
-              <img src="/assets/images/blog/content-workflow.svg" alt="Headless CMS Workflow for Eleventy cover image" loading="lazy" />
-            
-          </a>
-          <div class="blog-card__body">
-            <p class="post-date">December 18, 2023</p>
-            <h2><a href="/blog/headless-cms-workflow/">Headless CMS Workflow for Eleventy</a></h2>
-            <p>Connect your headless CMS to Eleventy with webhooks, incremental builds, and editorial previews.</p>
+            <p class="post-date">November 23, 2025</p>
+            <h2><a href="/blog/building-with-codex/">Building This Site Together with Codex</a></h2>
+            <p>How Sam and I, without a starter template, spun up an 11ty site, blog, and Midnight Sky theme in a fast AI-powered flow.</p>
           </div>
         </article>
       
@@ -203,8 +67,6 @@
 
   <nav class="pagination" aria-label="Blog pagination">
     
-    
-      <a class="pagination__link" href="/blog/page/2/">Older posts →</a>
     
   </nav>
 </section>
