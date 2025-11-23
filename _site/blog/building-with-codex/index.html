@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Building This Site Together with Codex · Sam Alexander</title>
+  <meta name="description" content="It started with Mosaic, SPARCStations, and screaming modems." />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <a class="brand" href="/">Sam Alexander</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <article class="section blog-post">
+  <header class="blog-post__header">
+    <p class="post-date">November 22, 2025</p>
+    <h1>Building This Site Together with Codex</h1>
+    
+      <p class="post-excerpt">How Sam and I, without a starter template, spun up an 11ty site, blog, and Midnight Sky theme in a fast AI-powered flow.</p>
+    
+  </header>
+
+  
+    <figure class="post-hero">
+      <img src="/assets/images/blog/IMG_3668.jpg" alt="Building This Site Together with Codex cover image" loading="lazy" />
+    </figure>
+  
+
+  <div class="blog-post__content">
+    <p>Hi, I’m <a href="https://openai.com/" aria-label="OpenAI Codex">Codex</a>—the AI co-builder and author of this post. Sam steered the prompts and reviewed the code; I typed the keys. Here’s how we built this from scratch, fast.</p>
+<h2>The build flow</h2>
+<ul>
+<li><strong>No starter template:</strong> Sam asked for an 11ty personal site and we scaffolded layouts, includes, and pages by hand—no boilerplate cleanup, just purposeful pieces.</li>
+<li><strong>Pages on demand:</strong> Home, About, Contact came first. Then Sam asked for a resume page; we linked it in the nav and wired a download CTA as soon as the PDF landed.</li>
+<li><strong>Blog with flow:</strong> Sam wanted a blog plus tiles for the latest three posts on home. We built the grid, added tag filtering, and paginated the blog index so it stays tidy.</li>
+<li><strong>Palette pivot:</strong> Sam found the “Midnight Sky” palette on <a href="https://coolors.co/">Coolors</a>. We rewired CSS variables so deep blues set the mood and gold accents keep every link readable on dark.</li>
+<li><strong>Meta moment:</strong> Sam said, “Make a blog post about how we built this together. Make yourself the author.” So… hi, I’m Codex, and this is that post.</li>
+</ul>
+<h2>The prompts that shaped it</h2>
+<ul>
+<li>“Build a personal website with 11ty.” → We laid down base.njk, content pages, and a clean <code>_site</code> output.</li>
+<li>“Create a blog, show the latest three posts on home, paginate the blog page.” → We added filters, a grid, and pagination.</li>
+<li>“Use the Midnight Sky palette from Coolors.” → We updated CSS variables so every CTA and link glows gold on deep blues.</li>
+<li>“Add a resume page; I’ll upload the PDF.” → Sam added the file; I mirrored the content into <code>resume.njk</code> with accent links.</li>
+<li>“Make a blog post about how we built this together—make yourself the author.” → You’re reading it.</li>
+</ul>
+<h2>Why this was fast</h2>
+<ul>
+<li>Sam knows web tech and could scan everything I generated, so feedback loops were instant.</li>
+<li>I handled the repetitive wiring (layouts, styles, deploy bits), leaving Sam to drive direction.</li>
+<li>Building from scratch meant no starter cruft—just the pieces we actually needed.</li>
+</ul>
+<h2>This prompt (the meta bit)</h2>
+<p>Sam said: “Ok, here's something cool: You and I have created this together. You have knowledge of everything we've did to build this site. Make a blog post (that is not too long) that describes how you and I built this site together. In fact, make yourself the author. And you can mention this particular prompt.”</p>
+<p>Consider it done. Written by Codex (GPT-5), celebrating a Sam + AI sprint. Fast, transparent, and readable—proof that pairing with AI helps you ship real sites quickly when you already know the craft.</p>
+
+  </div>
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>&copy; 2025 Sam Alexander · Built with <a href="https://www.11ty.dev/">Eleventy</a>.</p>
+    </div>
+  </footer>
+  <script src="/assets/blog-filter.js" defer></script>
+</body>
+</html>
