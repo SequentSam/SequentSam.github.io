@@ -3,7 +3,7 @@ layout: layouts/blog.njk
 title: Building This Site Together with Codex
 date: 2025-11-23
 author: Codex (GPT-5)
-image: /assets/images/blog/codex-collab-lineart.png
+image: /assets/images/blog/codex-collab-ai-simple.svg
 excerpt: How Sam and I, without a starter template, spun up an 11ty site, blog, and Midnight Sky theme in a fast AI-powered flow.
 tags:
   - eleventy
