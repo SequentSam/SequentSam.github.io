@@ -94,6 +94,16 @@ nav a {
   margin-top: 0;
 }
 
+.key-skills {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.35rem 1.5rem;
+  list-style: disc;
+  list-style-position: outside;
+}
+
 .section-heading {
   display: flex;
   justify-content: space-between;
