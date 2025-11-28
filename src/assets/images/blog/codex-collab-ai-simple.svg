@@ -1,165 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">Human and AI building a website together</title>
-  <desc id="desc">
-    A simple, playful illustration of a person and an AI agent collaborating on a website.
-  </desc>
+  <title id="title">Human and agentic AI collaborating</title>
+  <desc id="desc">A simple, clean illustration of a person and an AI agent sharing ideas across a screen.</desc>
 
-  <!-- PALETTE (roughly "midnight sky" + teal/purple accents)
-       bg-dark:      #020617
-       bg-inner:     #02081a
-       card:         #0b1220
-       browser:      #0f172a
-       accent-teal:  #06b6d4
-       accent-cyan:  #22d3ee
-       accent-violet:#6366f1
-       accent-pink:  #ec4899
-       accent-yellow:#facc15
-       soft-text:    #e5e7eb
-  -->
-
-  <!-- Background -->
   <defs>
-    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#020617"/>
-      <stop offset="100%" stop-color="#02081a"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#0f172a"/>
     </linearGradient>
-    <linearGradient id="browserBg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#020617"/>
-      <stop offset="100%" stop-color="#0b1220"/>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0b1120"/>
     </linearGradient>
   </defs>
 
-  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  <rect width="1200" height="630" fill="url(#bg)"/>
 
-  <!-- Soft spotlight behind main card -->
-  <circle cx="600" cy="315" r="330" fill="#0b1120" opacity="0.7"/>
+  <!-- central card -->
+  <rect x="210" y="130" width="780" height="370" rx="32" fill="url(#card)" stroke="#1e293b" stroke-width="2"/>
+  <rect x="230" y="210" width="360" height="200" rx="20" fill="#0f172a" stroke="#1f2937" stroke-width="1.5"/>
+  <rect x="620" y="210" width="330" height="160" rx="20" fill="#0f172a" stroke="#1f2937" stroke-width="1.5"/>
 
-  <!-- Central browser/card -->
-  <g transform="translate(250,120)">
-    <!-- Outer card -->
-    <rect x="0" y="0" width="700" height="390" rx="32" ry="32" fill="#020617" stroke="#1e293b" stroke-width="2"/>
-
-    <!-- Browser top bar -->
-    <rect x="0" y="0" width="700" height="56" rx="32" ry="32" fill="#02081a"/>
-    <!-- Browser dots -->
-    <circle cx="32" cy="28" r="6" fill="#f97316"/>
-    <circle cx="54" cy="28" r="6" fill="#facc15"/>
-    <circle cx="76" cy="28" r="6" fill="#22c55e"/>
-
-    <!-- "URL bar" -->
-    <rect x="120" y="18" width="320" height="20" rx="10" ry="10" fill="#0b1220" stroke="#1f2937" stroke-width="1"/>
-    <text x="132" y="32" font-family="system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#6b7280">
-      human + AI → building this site
-    </text>
-
-    <!-- Inner content area -->
-    <rect x="24" y="76" width="652" height="280" rx="24" ry="24" fill="url(#browserBg)" stroke="#1f2937" stroke-width="1.5"/>
-
-    <!-- Left: simple layout blocks -->
-    <g transform="translate(52,102)">
-      <rect x="0" y="0" width="220" height="32" rx="10" ry="10" fill="#0b1120"/>
-      <rect x="0" y="48" width="180" height="14" rx="7" ry="7" fill="#111827"/>
-      <rect x="0" y="70" width="200" height="14" rx="7" ry="7" fill="#111827"/>
-      <rect x="0" y="92" width="160" height="14" rx="7" ry="7" fill="#111827"/>
-
-      <!-- CTA -->
-      <rect x="0" y="126" width="120" height="32" rx="16" ry="16" fill="#06b6d4"/>
-      <text x="16" y="147" font-family="system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#020617">
-        Launch site →
-      </text>
-    </g>
-
-    <!-- Right: image and tiles -->
-    <g transform="translate(340,102)">
-      <!-- Image placeholder -->
-      <rect x="0" y="0" width="240" height="120" rx="18" ry="18" fill="#020617" stroke="#1f2937" stroke-width="1"/>
-      <!-- Very simple "mountains + moon" -->
-      <polygon points="12,112 68,52 124,112" fill="#22d3ee" opacity="0.9"/>
-      <polygon points="80,112 150,36 228,112" fill="#6366f1" opacity="0.95"/>
-      <circle cx="204" cy="38" r="12" fill="#facc15"/>
-
-      <!-- Tiles -->
-      <rect x="0" y="138" width="68" height="46" rx="12" ry="12" fill="#111827"/>
-      <rect x="86" y="138" width="68" height="46" rx="12" ry="12" fill="#111827"/>
-      <rect x="172" y="138" width="68" height="46" rx="12" ry="12" fill="#111827"/>
-
-      <!-- Highlight active tile -->
-      <rect x="86" y="138" width="68" height="46" rx="12" ry="12" fill="none" stroke="#06b6d4" stroke-width="2"/>
-    </g>
+  <!-- simple UI blocks -->
+  <g transform="translate(260 240)" fill="#111827">
+    <rect width="220" height="18" rx="9"/>
+    <rect y="36" width="180" height="12" rx="6"/>
+    <rect y="60" width="200" height="12" rx="6"/>
+    <rect y="84" width="160" height="12" rx="6"/>
+    <rect y="120" width="120" height="32" rx="16" fill="#06b6d4"/>
   </g>
 
-  <!-- Human (left) - simplified -->
-  <g transform="translate(190,320)">
-    <!-- Shadow -->
-    <ellipse cx="0" cy="58" rx="70" ry="18" fill="#020617" opacity="0.8"/>
-
-    <!-- Body -->
-    <rect x="-24" y="-8" width="48" height="68" rx="22" ry="22" fill="#0f172a"/>
-    <!-- Head -->
-    <circle cx="0" cy="-36" r="22" fill="#fcd34d"/>
-    <!-- Hair -->
-    <path d="M -16 -40 Q 0 -60 20 -40 Q 12 -54 0 -54 Q -12 -54 -20 -44 Z" fill="#020617"/>
-    <!-- Eyes -->
-    <circle cx="-7" cy="-38" r="3" fill="#020617"/>
-    <circle cx="7" cy="-38" r="3" fill="#020617"/>
-    <!-- Smile -->
-    <path d="M -8 -28 Q 0 -20 8 -28" stroke="#ea580c" stroke-width="2.3" fill="none" stroke-linecap="round"/>
-
-    <!-- Left arm (toward screen) -->
-    <path d="M -24 4 Q -70 -14 -100 -8" stroke="#fcd34d" stroke-width="10" stroke-linecap="round" fill="none"/>
-
-    <!-- Right arm (toward browser) -->
-    <path d="M 24 4 Q 72 -18 110 -34" stroke="#fcd34d" stroke-width="10" stroke-linecap="round" fill="none"/>
-
-    <!-- Small tablet in front -->
-    <rect x="-34" y="14" width="68" height="42" rx="10" ry="10" fill="#020617" stroke="#1e293b" stroke-width="2"/>
-    <rect x="-26" y="21" width="52" height="20" rx="6" ry="6" fill="#0b1220"/>
-    <circle cx="-19" cy="32" r="3" fill="#6366f1"/>
-    <circle cx="-11" cy="32" r="3" fill="#06b6d4"/>
-    <circle cx="-3" cy="32" r="3" fill="#ec4899"/>
+  <g transform="translate(650 236)" fill="#111827">
+    <rect width="240" height="130" rx="18" stroke="#1f2937" stroke-width="1" fill="#0b1220"/>
+    <rect y="150" width="70" height="36" rx="10"/>
+    <rect x="86" y="150" width="70" height="36" rx="10"/>
+    <rect x="172" y="150" width="70" height="36" rx="10" stroke="#06b6d4" stroke-width="2" fill="#0b1120"/>
   </g>
 
-  <!-- AI agent (right) -->
-  <g transform="translate(1010,320)">
-    <!-- Shadow -->
-    <ellipse cx="0" cy="60" rx="70" ry="18" fill="#020617" opacity="0.8"/>
-
-    <!-- Body -->
-    <rect x="-26" y="0" width="52" height="72" rx="24" ry="24" fill="#0b1120" stroke="#1e293b" stroke-width="2"/>
-
-    <!-- Head -->
-    <rect x="-30" y="-48" width="60" height="40" rx="18" ry="18" fill="#02081a" stroke="#22d3ee" stroke-width="2"/>
-    <!-- Antenna -->
-    <line x1="0" y1="-62" x2="0" y2="-74" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="0" cy="-80" r="6" fill="#ec4899"/>
-
-    <!-- Eyes -->
-    <circle cx="-12" cy="-30" r="5" fill="#22d3ee"/>
-    <circle cx=" 12" cy="-30" r="5" fill="#22d3ee"/>
-    <!-- Smile -->
-    <path d="M -10 -22 Q 0 -16 10 -22" stroke="#22d3ee" stroke-width="2" fill="none" stroke-linecap="round"/>
-
-    <!-- Arms (simple cables) -->
-    <path d="M -26 14 Q -70 0 -98 -18" stroke="#22d3ee" stroke-width="6" stroke-linecap="round" fill="none"/>
-    <path d="M 26 14 Q 70 4 102 -12" stroke="#6366f1" stroke-width="6" stroke-linecap="round" fill="none"/>
-
-    <!-- Small floating panel -->
-    <rect x="-94" y="-82" width="88" height="38" rx="12" ry="12" fill="#020617" stroke="#1e293b" stroke-width="1.5"/>
-    <rect x="-86" y="-74" width="40" height="10" rx="5" ry="5" fill="#6366f1"/>
-    <rect x="-86" y="-58" width="24" height="8" rx="4" ry="4" fill="#0ea5e9"/>
-    <rect x="-56" y="-58" width="16" height="8" rx="4" ry="4" fill="#22c55e"/>
+  <!-- person -->
+  <g transform="translate(170 330)">
+    <ellipse cx="0" cy="62" rx="70" ry="20" fill="#0b1120" opacity="0.7"/>
+    <circle cx="0" cy="-16" r="46" fill="#111827" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="-12" cy="-26" r="10" fill="#fcd34d"/>
+    <circle cx="12" cy="-26" r="10" fill="#fcd34d"/>
+    <path d="M -16 0 Q 0 14 16 0" stroke="#06b6d4" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M -38 16 Q -120 0 -150 -20" stroke="#06b6d4" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M 38 16 Q 120 0 150 -20" stroke="#22d3ee" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <rect x="-30" y="32" width="60" height="44" rx="12" fill="#0b1220" stroke="#1f2937" stroke-width="2"/>
   </g>
 
-  <!-- Connector lines from human & AI to browser (subtle, works at small size) -->
-  <line x1="280" y1="320" x2="360" y2="260" stroke="#06b6d4" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 7" opacity="0.8"/>
-  <line x1="940" y1="310" x2="840" y2="250" stroke="#6366f1" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 7" opacity="0.8"/>
+  <!-- AI agent -->
+  <g transform="translate(1030 330)">
+    <ellipse cx="0" cy="62" rx="70" ry="20" fill="#0b1120" opacity="0.7"/>
+    <rect x="-42" y="-30" width="84" height="84" rx="28" fill="#0b1120" stroke="#1e293b" stroke-width="2"/>
+    <rect x="-34" y="-56" width="68" height="46" rx="16" fill="#0f172a" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="-14" cy="-36" r="6" fill="#22d3ee"/>
+    <circle cx="14" cy="-36" r="6" fill="#22d3ee"/>
+    <path d="M -14 -22 Q 0 -14 14 -22" stroke="#22d3ee" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M -42 18 Q -104 -6 -140 -34" stroke="#06b6d4" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M 42 18 Q 110 -2 144 -28" stroke="#6366f1" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <circle cx="0" cy="-70" r="8" fill="#ec4899"/>
+    <line x1="0" y1="-62" x2="0" y2="-52" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+  </g>
 
-  <!-- Tiny sparkles (readable as dots even when small) -->
+  <!-- connector lines -->
+  <path d="M 320 300 C 380 250 500 250 560 300" stroke="#06b6d4" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="10 8"/>
+  <path d="M 880 300 C 820 250 700 250 640 300" stroke="#6366f1" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="10 8"/>
+
+  <!-- tiny accents -->
   <g fill="#facc15">
-    <circle cx="600" cy="110" r="3"/>
-    <circle cx="540" cy="520" r="3"/>
-    <circle cx="720" cy="510" r="3"/>
-    <circle cx="360" cy="140" r="2.5"/>
-    <circle cx="860" cy="160" r="2.5"/>
+    <circle cx="600" cy="120" r="4"/>
+    <circle cx="520" cy="500" r="3"/>
+    <circle cx="700" cy="500" r="3"/>
+    <circle cx="360" cy="180" r="3"/>
+    <circle cx="860" cy="180" r="3"/>
   </g>
 </svg>
